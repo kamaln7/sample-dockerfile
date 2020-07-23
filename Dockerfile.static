@@ -1,4 +1,5 @@
 FROM alpine
 
+WORKDIR /workspace/_static
 RUN echo hello > hello.txt
 RUN date > index.html
