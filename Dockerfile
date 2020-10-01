@@ -7,4 +7,5 @@ FROM alpine
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=builder /app/bin/hello /usr/local/bin/
+COPY ./README.md /root/
 CMD ["hello"]
